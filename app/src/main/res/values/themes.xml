@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Gallery" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Gallery" parent="Base.Theme.Gallery" />
+
+    <style name="Theme.Base.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.Base.Collapse" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/neutral_bg</item>
+        <item name="colorPrimaryVariant">@color/surface_variant</item>
+        <item name="colorOnPrimary">@color/on_surface</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/neutral_bg</item>
+        <item name="colorSecondaryVariant">@color/surface_variant</item>
+        <item name="colorOnSecondary">@color/on_surface</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/color_transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:exported">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+
+    <style name="CollapsingAppBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="collapsedTitleGravity">start</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="elevation">@dimen/dimen_4</item>
+        <item name="contentScrim">@color/surface</item>
+        <item name="titleCollapseMode">scale</item>
+        <item name="expandedTitleGravity">bottom</item>
+        <item name="statusBarScrim">@color/surface</item>
+        <item name="layout_scrollFlags">scroll|snap|exitUntilCollapsed</item>
+        <item name="expandedTitleMarginBottom">@dimen/dimen_12</item>
+        <item name="expandedTitleMarginStart">@dimen/dimen_16</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="TextCollapsedAppBarStatement" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextExpandedStatementAppBar" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/sf_pro_text_bold</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+</resources>
